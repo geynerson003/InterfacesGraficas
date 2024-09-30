@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="377.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniminuto.semana3.MainController">
+    <children>
+        <ImageView fitHeight="380.0" fitWidth="875.0" focusTraversable="true" layoutX="-4.0" layoutY="-1.0"
+                   pickOnBounds="true" smooth="false">
+            <image>
+                <Image url="@../../../img/fondo.jpg"/>
+            </image>
+        </ImageView>
+        <Button fx:id="moveButton" layoutX="362.0" layoutY="73.0" mnemonicParsing="false"
+                onAction="#handleMoveButtonClick" prefHeight="45.0" prefWidth="130.0"
+                style="-fx-background-radius: 20; -fx-background-color: FF5294;" text="Haz Click" textFill="#ffffffca">
+            <font>
+                <Font name="Arial Black" size="18.0"/>
+            </font>
+        </Button>
+        <TextField id="textFieldOne" fx:id="inputNumberField" alignment="TOP_CENTER" layoutX="294.0" layoutY="137.0"
+                   onAction="#handleInputNumber" prefHeight="34.0" prefWidth="267.0" promptText="Ingresa un numero"
+                   style="-fx-background-radius: 20;">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </TextField>
+        <TextField id="textFieldTwo" fx:id="resultField" alignment="TOP_CENTER" editable="false" layoutX="294.0"
+                   layoutY="189.0" prefHeight="34.0" prefWidth="267.0" promptText="Resultado de la raiz"
+                   style="-fx-background-radius: 20;">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </TextField>
+        <Button id="btnTwo" fx:id="sqrtButton" graphicTextGap="0.0" layoutX="208.0" layoutY="189.0"
+                mnemonicParsing="false" onAction="#handleSqrtButtonClick" prefHeight="34.0" prefWidth="68.0"
+                style="-fx-background-radius: 20;"/>
+        <ImageView disable="true" fitHeight="32.0" fitWidth="32.0" layoutX="227.0" layoutY="191.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../../img/raizcuadrada.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="countButton" layoutX="208.0" layoutY="241.0" mnemonicParsing="false"
+                onAction="#handleCountButtonClick" prefHeight="34.0" prefWidth="68.0"
+                style="-fx-background-radius: 20;">
+            <graphic>
+                <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/mano.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="counterField" alignment="TOP_CENTER" editable="false" layoutX="300.0" layoutY="243.0"
+                   prefHeight="34.0" prefWidth="267.0" promptText="Contador" style="-fx-background-radius: 20;">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </TextField>
+    </children>
+</Pane>
